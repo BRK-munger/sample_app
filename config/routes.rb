@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root 'application#hello'
-  get 'top' => 'homes#top'
-  resources :lists
+  get 'static_pages/home'
+  get 'static_pages/help'
+  root 'static_pages#home'
+  get  'static_pages/home'
+  get  'static_pages/help'
+  get  'static_pages/about'
 end
